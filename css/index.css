@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--branco: rgba(255,255,255,0.9);
+	--calc: calc(100% - 1rem);
+	--calc2: calc(100% - 3.2rem);
+	--borda: rgba(255,255,255,0.5);
+	--btn-cinza: rgba(54,54,54,0.6);
+}
+
+html,
+body{
+	height: 100%;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header{
+	align-items: center;
+	background: rgba(79,79,79,0.4);
+	display: flex;
+}
+
+.header-size{
+	align-items: center;
+	display: flex;
+	padding: 0.5rem;
+}
+
+header h1{
+	color: rgba(255,255,255,0.9);
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+header a{
+	font-size: 1.1rem;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--branco);
+	display: block;
+	text-decoration: none;
+}
+
+header nav,
+header ul{
+	display: flex;
+	flex: 1;
+}
+
+header ul{
+	list-style: none;
+	justify-content: flex-end;
+	margin-right: 5%;
+}
+
+
+#form-home{
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	float: right;
+	margin-right: 10%;
+	margin-top: 8%;
+	flex-direction: column;
+	width: 28rem;
+	height: 30rem;
+}
+
+#form-home h2{
+	padding: 1rem;
+	text-align: center;
+	font-weight: 300;
+	color: var(--branco);
+}
+
+.container-entrada{
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+	justify-content: center;
+	position: relative;
+}
+
+form input:focus{
+	outline: none;
+}
+
+form input{
+	padding: 0.6rem;
+	border: solid 1px;
+	background: unset;
+	color: #FFF;
+}
+
+form label{
+	font-size: 1rem;
+	color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]{	
+	border: solid 1px var(--borda);
+	font-size: 0.8rem;
+}
+
+input[type="button"]{
+	font-size: 1rem;
+	background:  var(--btn-cinza);
+	position: relative;
+	border: solid 1px var(--borda);
+	padding: 1rem;
+	width: var(--calc);
+	margin: 0 auto;
+}
+
+.texto-esquerda{
+	position: relative;
+	top: 160px;
+	left: 10px;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	width: 20rem;
+}
+
+.texto-esquerda h2{
+	display: flex;
+	flex-direction: column;
+	text-align: center-left;
+	padding: 1rem;
+	font-size: 2rem;
+	font-weight: 600;
+	color: rgba(255,255,255,0.9);
+}
+
+::placeholder{
+	color: rgba(255,255,255,0.7);
+}

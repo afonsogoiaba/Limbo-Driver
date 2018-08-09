@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--branco: rgba(255,255,255,0.9);
+	--calc: calc(100% - 1rem);
+	--calc2: calc(100% - 3.2rem);
+	--borda: rgba(255,255,255,0.5);
+	--btn-cinza: rgba(54,54,54,0.6);
+}
+
+html,
+body{
+	height: 100%;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+html{
+	background: url(../img/cadastro.jpeg)no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header{
+	align-items: center;
+	background: rgba(79,79,79,0.4);
+	display: flex;
+}
+
+.limbo{
+	align-items: center;
+	display: flex;
+	padding: 0.5rem;
+}
+
+header h1{
+	color: rgba(255,255,255,0.9);
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+header ul,
+header nav{
+	display: flex;
+	flex: 1;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 5%;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+header a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+	padding: 1rem;
+	font-size: 1.1rem;
+}
+
+form{
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 7%;
+	width: 28rem;
+	height: 30rem;
+}
+
+form h2{
+	padding: 1rem;
+	text-align: center;
+	font-weight: 300;
+	color: var(--branco);
+}
+
+.container-entrada{
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+	justify-content: center;
+	position: relative;
+}
+
+form input:focus{
+	outline: none;
+}
+
+form input{
+	padding: 0.6rem;
+	border: solid 1px;
+	background: unset;
+	color: #FFF;
+}
+
+form label{
+	font-size: 1rem;
+	color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]{	
+	border: solid 1px var(--borda);
+	font-size: 0.8rem;
+}
+
+input[type="button"]{
+	font-size: 1rem;
+	background:  var(--btn-cinza);
+	position: relative;
+	border: solid 1px var(--borda);
+	padding: 1rem;
+	width: var(--calc);
+	margin: 0 auto;
+}
+
+::placeholder{
+	color: rgba(255,255,255,0.7);
+};

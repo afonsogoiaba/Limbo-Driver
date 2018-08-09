@@ -1,0 +1,10 @@
+			html limbo
+
+			<nav>
+				<ul>
+					<li><a href=""><img src="img/icon/pasta.svg" width="25" height="25"></a></li>
+					<li><a href=""><img src="img/icon/lixeira.svg" width="25" height="25"></a></li>
+					<li><a href=""><img src="img/icon/up.svg" width="25" height="25"></a></li>
+				</ul>
+			</nav>
+		</main>
